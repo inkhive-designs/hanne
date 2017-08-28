@@ -1,0 +1,74 @@
+.hanne {
+  border-bottom: none;
+  position: relative;
+  overflow: auto;
+  -webkit-perspective: 500;
+  perspective: 500;
+  min-height: 144px;
+  padding: 20px 50px;
+  .featured-thumb {
+    border: solid 1px darken(@background,12%);
+    padding: 8px;
+    position: relative;
+    .postedon {
+      position: absolute;
+      background: fade(black,50%);
+      a { color: darken(@background,0%); }
+      position: absolute;
+      padding: 3px;
+      font-size: 12px;
+      left: 50%;
+      bottom: 5px;
+      font-weight: lighter;
+      opacity: 0;
+    }
+    &:hover {
+      img {
+        -webkit-filter: brightness(0.8);
+        filter: brightness(0.8);
+        .transform(none);
+      }
+
+    }
+  }
+  .out-thumb {
+    position: relative;
+    margin-top: 25px;
+    text-align: center;
+    h1.entry-title {
+      font-size: 14px;
+      margin-top: 17px;
+      a {
+        color: fade(@content, 70%);
+      }
+    }
+    &:after {
+      content: "";
+      width: 12px;
+      left: ~"calc(49% - 6px)";
+      height: 12px;
+      text-align: center;
+      background: darken(@background, 7%);
+      border-radius: 50%;
+      position: absolute;
+      top: -10px;
+      .transition(0.4s all ease);
+    }
+  }
+  &:hover {
+    .out-thumb {
+      &:after {
+        background: @accent;
+        .transform(scale(1.2));
+      }
+    }
+  }
+
+}
+/* Code to make way for large first post on homepage */
+.blog.paged .haxel:nth-child(even) {
+  clear: none;
+}
+.blog.paged .haxel:nth-child(odd) {
+  clear: left;
+}

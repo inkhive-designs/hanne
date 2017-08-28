@@ -6,8 +6,55 @@
 function hanne_custom_css_mods() {
 
 	$custom_css = "";
-	
-	//If Highlighting Nav active item is disabled
+
+    //page builder
+    if(!is_home() && is_front_page()):
+        if( get_theme_mod('hanne_page_title', true)):
+            $custom_css .= "#primary-mono .entry-header { display:none; }
+                            #content{margin-top:0px; padding-top:0px;}
+            ";
+        endif;
+    endif;
+
+    if (!is_home() && is_front_page()) :
+        if ( get_theme_mod('hanne_content_font_size') ) :
+            $size = (get_theme_mod('hanne_content_font_size'));
+            $custom_css .= "#primary-mono .entry-content { font-size:".$size.";}";
+        endif;
+    endif;
+
+    if (!is_home() && is_front_page()) :
+        if ( get_theme_mod('hanne_content_font_size') ) :
+            $size = (get_theme_mod('hanne_content_font_size'));
+            $custom_css .= "#primary-mono .entry-content { font-size:".$size.";}";
+        endif;
+    endif;
+
+    //hero 1
+    if (!is_home() && is_front_page()) :
+        if ( get_theme_mod('hanne_content_font_size') ) :
+            $size = (get_theme_mod('hanne_content_font_size'));
+            $custom_css .= "#primary-mono .entry-content { font-size:".$size.";}";
+        endif;
+    endif;
+
+    if (get_theme_mod('hanne_hero_background_image') != '') :
+        $image = get_theme_mod('hanne_hero_background_image');
+        $custom_css .= "#hero {
+                    	background-image: url('" . $image . "');
+                        background-size: cover;
+                }";
+    endif;
+
+    if (!get_theme_mod('hanne_hero_background_image')) :
+
+        $custom_css .= "#hero{background:@accent !important;}";
+    endif;
+
+
+
+
+    //If Highlighting Nav active item is disabled
 	if ( get_theme_mod('hanne_disable_active_nav') ) :
 		$custom_css .= "#site-navigation ul .current_page_item > a, #site-navigation ul .current-menu-item > a, #site-navigation ul .current_page_ancestor > a { border:none; background: inherit; }"; 
 	endif;
@@ -75,6 +122,8 @@ function hanne_custom_css_mods() {
 		endif;
 
 	wp_add_inline_style( 'hanne-main-theme-style', wp_strip_all_tags($custom_css) );
+
+
 	
 }
 
