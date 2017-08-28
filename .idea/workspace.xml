@@ -2,71 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="c7be41cf-c897-4cbf-8914-a4b793958952" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/_header.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/assets/theme-styles/blog-layouts/_init_blog_layouts.less" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/assets/theme-styles/blog-layouts/grid-lyouts.less" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/assets/theme-styles/blog-layouts/hanne-layouts.less" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/assets/theme-styles/featured-components/_init_featured.less" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/assets/theme-styles/featured-components/featured-area.less" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/assets/theme-styles/featured-components/featured-showcase.less" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/assets/theme-styles/featured-components/slider-swiper.less" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/assets/theme-styles/sections/404.less" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/assets/theme-styles/sections/_init_sections.less" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/assets/theme-styles/sections/comments.less" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/assets/theme-styles/sections/footer.less" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/assets/theme-styles/sections/header.less" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/assets/theme-styles/sections/hero.less" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/assets/theme-styles/sections/jumbosearch.less" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/assets/theme-styles/sections/navigation.less" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/assets/theme-styles/sections/pagination.less" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/assets/theme-styles/sections/sidebar.less" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/assets/theme-styles/sections/single.less" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/assets/theme-styles/sections/social-fa.less" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/assets/theme-styles/sections/universal.less" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/assets/theme-styles/skins/default.less" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/assets/theme-styles/variables.less" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/framework/admin_modules/admin_styles.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/framework/admin_modules/excerpt_length.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/framework/admin_modules/exclude_single_post.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/framework/admin_modules/register_styles.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/framework/admin_modules/register_widgets.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/framework/admin_modules/theme_setup.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/framework/customizer/_featured-posts.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/framework/customizer/_googlefonts.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/framework/customizer/_layouts.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/framework/customizer/_sanitization.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/framework/customizer/front-pagebuilder.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/framework/customizer/header.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/framework/customizer/init.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/framework/customizer/misc-scripts.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/framework/customizer/skins.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/framework/customizer/social-icons.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/modules/header/head.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/modules/header/jumbosearch.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/modules/header/masthead.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/modules/hero/hero.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/modules/navigation/menu-primary.php" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/assets/less/main.less" afterPath="" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/assets/less/admin.less" afterPath="$PROJECT_DIR$/assets/theme-styles/admin-styles/admin.less" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/assets/less/functions.less" afterPath="$PROJECT_DIR$/assets/theme-styles/functions.less" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/assets/less/variables.less" afterPath="$PROJECT_DIR$/assets/theme-styles/_init.less" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/content-none.php" afterPath="$PROJECT_DIR$/modules/content/content-none.php" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/content-page.php" afterPath="$PROJECT_DIR$/modules/content/content-page.php" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/content-search.php" afterPath="$PROJECT_DIR$/modules/content/content-search.php" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/content-single.php" afterPath="$PROJECT_DIR$/modules/content/content-single.php" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/content.php" afterPath="$PROJECT_DIR$/modules/content/content.php" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/featured-posts.php" afterPath="$PROJECT_DIR$/framework/featured-components/featured-posts.php" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/social-fa.php" afterPath="$PROJECT_DIR$/modules/social/social-fa.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/archive.php" afterPath="$PROJECT_DIR$/archive.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/assets/css/main.css" afterPath="$PROJECT_DIR$/assets/css/main.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/framework/theme-functions.php" afterPath="$PROJECT_DIR$/framework/theme-functions.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/functions.php" afterPath="$PROJECT_DIR$/functions.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/header.php" afterPath="$PROJECT_DIR$/header.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/inc/css-mods.php" afterPath="$PROJECT_DIR$/inc/css-mods.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/inc/customizer.php" afterPath="$PROJECT_DIR$/inc/customizer.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/page.php" afterPath="$PROJECT_DIR$/page.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/search.php" afterPath="$PROJECT_DIR$/search.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/single.php" afterPath="$PROJECT_DIR$/single.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/assets/theme-styles/sections/universal.less" afterPath="$PROJECT_DIR$/assets/theme-styles/sections/universal.less" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -77,25 +13,24 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="universal.less" pinned="false" current-in-tab="false">
+      <file leaf-file-name="universal.less" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/assets/theme-styles/sections/universal.less">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="323">
-              <caret line="66" column="1" lean-forward="true" selection-start-line="66" selection-start-column="1" selection-end-line="66" selection-end-column="1" />
+            <state relative-caret-position="136">
+              <caret line="12" column="19" lean-forward="false" selection-start-line="12" selection-start-column="19" selection-end-line="12" selection-end-column="19" />
               <folding>
                 <element signature="e#32#74#0" expanded="false" />
                 <element signature="e#87#127#0" expanded="false" />
-                <element signature="e#134#203#0" expanded="false" />
-                <element signature="e#220#322#0" expanded="false" />
-                <element signature="e#325#428#0" expanded="false" />
-                <element signature="e#440#480#0" expanded="false" />
-                <element signature="e#496#958#0" expanded="false" />
+                <element signature="e#240#342#0" expanded="false" />
+                <element signature="e#345#448#0" expanded="false" />
+                <element signature="e#460#500#0" expanded="false" />
+                <element signature="e#516#978#0" expanded="false" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="footer.less" pinned="false" current-in-tab="true">
+      <file leaf-file-name="footer.less" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/assets/theme-styles/sections/footer.less">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="68">
@@ -188,7 +123,6 @@
         <option value="$PROJECT_DIR$/assets/theme-styles/sections/hero.less" />
         <option value="$PROJECT_DIR$/assets/theme-styles/variables.less" />
         <option value="$PROJECT_DIR$/assets/theme-styles/featured-components/featured-showcase.less" />
-        <option value="$PROJECT_DIR$/assets/theme-styles/sections/universal.less" />
         <option value="$PROJECT_DIR$/assets/theme-styles/featured-components/featured-area.less" />
         <option value="$PROJECT_DIR$/assets/less/main.less" />
         <option value="$PROJECT_DIR$/assets/theme-styles/featured-components/slider-swiper.less" />
@@ -200,6 +134,7 @@
         <option value="$PROJECT_DIR$/assets/theme-styles/sections/404.less" />
         <option value="$PROJECT_DIR$/framework/admin_modules/register_styles.php" />
         <option value="$PROJECT_DIR$/assets/theme-styles/sections/footer.less" />
+        <option value="$PROJECT_DIR$/assets/theme-styles/sections/universal.less" />
       </list>
     </option>
   </component>
@@ -300,12 +235,12 @@
       <option name="presentableId" value="Default" />
       <updated>1503738677534</updated>
       <workItem from="1503738679091" duration="16006000" />
-      <workItem from="1503890632295" duration="6988000" />
+      <workItem from="1503890632295" duration="7364000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="22994000" />
+    <option name="totallyTimeSpent" value="23370000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
@@ -813,28 +748,27 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/assets/theme-styles/sections/universal.less">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="323">
-          <caret line="66" column="1" lean-forward="true" selection-start-line="66" selection-start-column="1" selection-end-line="66" selection-end-column="1" />
-          <folding>
-            <element signature="e#32#74#0" expanded="false" />
-            <element signature="e#87#127#0" expanded="false" />
-            <element signature="e#134#203#0" expanded="false" />
-            <element signature="e#220#322#0" expanded="false" />
-            <element signature="e#325#428#0" expanded="false" />
-            <element signature="e#440#480#0" expanded="false" />
-            <element signature="e#496#958#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/assets/theme-styles/sections/footer.less">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="68">
           <caret line="4" column="22" lean-forward="false" selection-start-line="4" selection-start-column="22" selection-end-line="4" selection-end-column="22" />
           <folding>
             <element signature="e#3279#3473#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/assets/theme-styles/sections/universal.less">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="136">
+          <caret line="12" column="19" lean-forward="false" selection-start-line="12" selection-start-column="19" selection-end-line="12" selection-end-column="19" />
+          <folding>
+            <element signature="e#32#74#0" expanded="false" />
+            <element signature="e#87#127#0" expanded="false" />
+            <element signature="e#240#342#0" expanded="false" />
+            <element signature="e#345#448#0" expanded="false" />
+            <element signature="e#460#500#0" expanded="false" />
+            <element signature="e#516#978#0" expanded="false" />
           </folding>
         </state>
       </provider>
