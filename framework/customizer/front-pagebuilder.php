@@ -60,8 +60,8 @@ $wp_customize->add_control('hanne_disable_comments',
     array(
         'setting' => 'hanne_disable_comments',
         'section' => 'hanne_basic_settings_section',
-        'label' => __('Enable Comments Box', 'hanne'),
-        'description' => __('Comment Box will be enabled from your Static Page', 'hanne'),
+        'label' => __('Disable Comments Box', 'hanne'),
+        'description' => __('Comment Box will be disabled from your Static Page', 'hanne'),
         'type' => 'checkbox',
         'default' => false,
     )

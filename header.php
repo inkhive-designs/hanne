@@ -17,13 +17,14 @@
     <?php get_template_part('modules/navigation/menu','primary'); ?>
 
     <?php get_template_part('modules/header/masthead'); ?>
-    <?php get_template_part('modules/hero/hero'); ?>
+
 	<?php if( class_exists('rt_slider') ) {
 			 rt_slider::render('slider', 'nivo' ); 
 		} ?>
 	
 	
 	<?php get_template_part('framework/featured-components/featured', 'posts' ); ?>
+    <?php get_template_part('modules/hero/hero'); ?>
 	
 	<div class="mega-container">
 	

@@ -31,6 +31,8 @@ function hanne_custom_css_mods() {
     endif;
 
     //hero 1
+
+
     if (!is_home() && is_front_page()) :
         if ( get_theme_mod('hanne_content_font_size') ) :
             $size = (get_theme_mod('hanne_content_font_size'));
