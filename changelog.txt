@@ -1,6 +1,10 @@
 ChangeLog
 =========
 
+Version 1.0.3
+
+	i) Added Hero based on Featured Pages.
+
 Version 1.0.2
 
 	i) Corrected FAQs, & Added Pro Version Link
