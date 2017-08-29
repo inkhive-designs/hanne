@@ -40,10 +40,10 @@ function hanne_custom_css_mods() {
 
     if (get_theme_mod('hanne_hero_background_image') != '') :
         $image = get_theme_mod('hanne_hero_background_image');
-        $custom_css .= ".layer{
-                background-image: url('" . $image . "');
+        $custom_css .= "#hero {
+                    	background-image: url('" . $image . "');
                         background-size: cover;
-                        background-attachment: fixed;
+                        background-attachment:fixed;
                 }";
     endif;
 
