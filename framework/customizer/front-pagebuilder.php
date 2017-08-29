@@ -4,7 +4,7 @@ function hanne_customize_register_front_pagebuilder($wp_customize) {
 $wp_customize->add_panel('hanne_fpage_builder',
     array(
         'title' => __('Front Page Builder', 'hanne'),
-        'priority' => 30,
+        'priority' => 40,
     )
 );
 
@@ -17,25 +17,53 @@ $wp_customize->add_section('hanne_basic_settings_section',
     )
 );
 
-//Basic Setting Info
-$wp_customize->add_setting(
-    'hanne_fpb',
-    array( 'sanitize_callback' => 'esc_textarea' )
-);
-
-$wp_customize->add_control(
-    new hanne_WP_Customize_Upgrade_Control(
-        $wp_customize,
+    //Basic Setting Info
+    $wp_customize->add_setting(
         'hanne_fpb',
-        array(
-            'label' => __('Note','hanne'),
-            'description' => __('You need to set your homepage to a Static Front page in order to use any of these settings.','hanne'),
-            'section' => 'hanne_basic_settings_section',
-            'settings' => 'hanne_fpb',
-        )
-    )
-);
+        array( 'sanitize_callback' => 'esc_textarea' )
+    );
 
+    $wp_customize-> add_control(
+        new hanne_WP_Customize_Upgrade_Control(
+            $wp_customize,
+            'hanne_fpb',
+            array(
+                'label' => __('Note','hanne'),
+                'description' => __('You need to set your homepage to a Static Front page in order to use any of these settings.','hanne'),
+                'section' => 'hanne_basic_settings_section',
+                'settings' => 'hanne_fpb',
+            )
+        )
+    );
+//
+    //font size
+    $font_size = array(
+        '14px' => 'Default',
+        'initial' => 'Initial',
+        'small' => 'Small',
+        'medium' => 'Medium',
+        'large' => 'Large',
+        'larger' => 'Larger',
+        'x-large' => 'Extra Large',
+    );
+
+    $wp_customize->add_setting(
+        'hanne_content_font_size', array(
+            'default' => '14px',
+            'sanitize_callback' => 'hanne_sanitize_fontsize'
+        )
+    );
+
+
+    $wp_customize->add_control(
+        'hanne_content_font_size', array(
+            'settings' => 'hanne_content_font_size',
+            'label' => __( 'Content Font Size','hanne' ),
+            'section'  => 'hanne_basic_settings_section',
+            'type'     => 'select',
+            'choices' => $font_size
+        )
+    );
 $wp_customize->add_setting('hanne_page_title',
     array(
         'sanitize_callback' => 'hanne_sanitize_checkbox'
@@ -66,6 +94,8 @@ $wp_customize->add_control('hanne_disable_comments',
         'default' => false,
     )
 );
+
+
 
 
 
@@ -106,7 +136,7 @@ $wp_customize->add_control(
             'setting' => 'hanne_hero_background_image',
             'section' => 'hanne_hero1_section',
             'label' => __('Background Image', 'hanne'),
-            'description' => __('Upload an image to display in background of HERO', 'hanne'),
+            'description' => __('Upl    oad an image to display in background of HERO', 'hanne'),
             'active_callback' => 'hanne_hero_active_callback'
         )
     )
@@ -123,7 +153,7 @@ $wp_customize->add_control('hanne_hero1_selectpage',
         'setting' => 'hanne_hero1_selectpage',
         'section' => 'hanne_hero1_section',
         'label' => __('Title', 'hanne'),
-        'description' => __('Select a Page to display Title', 'hanne'),
+        'description' => __('Select a Page to display Title. Make sure page should contain feature image.', 'hanne'),
         'type' => 'dropdown-pages',
         'active_callback' => 'hanne_hero_active_callback'
     )

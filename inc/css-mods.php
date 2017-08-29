@@ -31,8 +31,6 @@ function hanne_custom_css_mods() {
     endif;
 
     //hero 1
-
-
     if (!is_home() && is_front_page()) :
         if ( get_theme_mod('hanne_content_font_size') ) :
             $size = (get_theme_mod('hanne_content_font_size'));
@@ -42,7 +40,7 @@ function hanne_custom_css_mods() {
 
     if (get_theme_mod('hanne_hero_background_image') != '') :
         $image = get_theme_mod('hanne_hero_background_image');
-        $custom_css .= "#hero {
+        $custom_css .= ".layer {
                     	background-image: url('" . $image . "');
                         background-size: cover;
                 }";
@@ -52,7 +50,13 @@ function hanne_custom_css_mods() {
 
         $custom_css .= "#hero{background:@accent !important;}";
     endif;
-
+    
+    if (!is_home() && is_front_page()) :
+        if ( get_theme_mod('hanne_content_font_size') ) :
+            $size = (get_theme_mod('hanne_content_font_size'));
+            $custom_css .= "#primary-mono .entry-content { font-size:".$size.";}";
+        endif;
+    endif;
 
 
 

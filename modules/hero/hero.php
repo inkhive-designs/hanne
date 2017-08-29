@@ -3,7 +3,7 @@
     <div id="hero" class="hero-content">
         <div class="layer"></div>
         <div class="container hero-container">
-            <div class="col-md-6 col-sm-12 h-content hvr-bounce-to-bottom">
+            <div class="col-md-6 col-sm-12 h-content">
                 <h1 class="title">
                     <?php echo get_the_title(get_theme_mod('hanne_hero1_selectpage')); ?>
                 </h1>
