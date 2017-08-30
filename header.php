@@ -25,6 +25,7 @@
 	
 	<?php get_template_part('framework/featured-components/featured', 'posts' ); ?>
     <?php get_template_part('modules/hero/hero'); ?>
+    <?php get_template_part('modules/fpage'); ?>
 	
 	<div class="mega-container">
 	

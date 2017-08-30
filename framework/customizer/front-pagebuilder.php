@@ -201,7 +201,95 @@ function hanne_hero_active_callback( $control ) {
 
 //hero 1 section end
 
+//featured page1 start
 
+    $wp_customize->add_section(
+        'hanne_a_fpages_boxes',
+        array(
+            'title'     => __('Featured Pages','hanne'),
+            'priority'  => 35,
+            'panel'     => 'hanne_fpage_builder',
+        )
+    );
+
+    $wp_customize->add_setting(
+        'hanne_fpages_enable',
+        array( 'sanitize_callback' => 'hanne_sanitize_checkbox' )
+    );
+
+    $wp_customize->add_control(
+        'hanne_fpages_enable', array(
+            'settings' => 'hanne_fpages_enable',
+            'label'    => __( 'Enable this section', 'hanne' ),
+            'description'    => __( 'Show one or two of your Featured Content. This can be used to display a information about an Agent, or the company itself. The Featured Pages you choose below, must have a Featured Image, Title & Content. Content Should be less than 150 words for best results.', 'hanne' ),
+            'section'  => 'hanne_a_fpages_boxes',
+            'type'     => 'checkbox',
+        )
+    );
+
+    $wp_customize->add_setting(
+        'hanne_fpages_page1',
+        array( 'sanitize_callback' => 'absint' )
+    );
+
+    $wp_customize->add_control(
+        'hanne_fpages_page1', array(
+            'settings' => 'hanne_fpages_page1',
+            'label'    => __( 'Page 1','hanne' ),
+            'section'  => 'hanne_a_fpages_boxes',
+            'type'     => 'dropdown-pages',
+            'allow_addition' => true,
+        )
+    );
+
+    $wp_customize->add_setting(
+        'hanne_fpages_page1_url',
+        array( 'sanitize_callback' => 'esc_url_raw' )
+    );
+
+    $wp_customize->add_control(
+        'hanne_fpages_page1_url', array(
+            'settings' => 'hanne_fpages_page1_url',
+            'label'    => __( 'Custom URL','hanne' ),
+            'description'    => __( 'Enter URL to link the Learn More button to some other page. Leave Blank to link to the page selected above or any external url. ','hanne' ),
+            'section'  => 'hanne_a_fpages_boxes',
+            'type'     => 'url',
+        )
+    );
+
+//featured page1 end.
+//featured page2 start.
+    $wp_customize->add_setting(
+        'hanne_fpages_page2',
+        array( 'sanitize_callback' => 'absint' )
+    );
+
+    $wp_customize->add_control(
+        'hanne_fpages_page2', array(
+            'settings' => 'hanne_fpages_page2',
+            'label'    => __( 'Page 2','hanne' ),
+            'description'    => __( 'Leave Blank to use only Page 1','hanne' ),
+            'section'  => 'hanne_a_fpages_boxes',
+            'type'     => 'dropdown-pages',
+            'allow_addition' => true,
+        )
+    );
+
+    $wp_customize->add_setting(
+        'hanne_fpages_page2_url',
+        array( 'sanitize_callback' => 'esc_url_raw' )
+    );
+
+    $wp_customize->add_control(
+        'hanne_fpages_page2_url', array(
+            'settings' => 'hanne_fpages_page2_url',
+            'label'    => __( 'Custom URL','hanne' ),
+            'description'    => __( 'Enter URL to link the Learn More button to some other page or external URL. Leave Blank to link to the page selected above. ','hanne' ),
+            'section'  => 'hanne_a_fpages_boxes',
+            'type'     => 'url',
+        )
+    );
+//featured page end.
 //front page builder end
 }
 add_action('customize_register', 'hanne_customize_register_front_pagebuilder');
