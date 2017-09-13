@@ -236,6 +236,7 @@ function hanne_hero_active_callback( $control ) {
         'hanne_fpages_page1', array(
             'settings' => 'hanne_fpages_page1',
             'label'    => __( 'Page 1','hanne' ),
+            'description'    => __( 'Make sure page should contain featured image.','hanne' ),
             'section'  => 'hanne_a_fpages_boxes',
             'type'     => 'dropdown-pages',
             'allow_addition' => true,
@@ -268,7 +269,7 @@ function hanne_hero_active_callback( $control ) {
         'hanne_fpages_page2', array(
             'settings' => 'hanne_fpages_page2',
             'label'    => __( 'Page 2','hanne' ),
-            'description'    => __( 'Leave Blank to use only Page 1','hanne' ),
+            'description'    => __( 'Make sure page should contain featured image.','hanne' ),
             'section'  => 'hanne_a_fpages_boxes',
             'type'     => 'dropdown-pages',
             'allow_addition' => true,

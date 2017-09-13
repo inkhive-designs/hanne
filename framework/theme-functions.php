@@ -17,7 +17,7 @@ require get_template_directory() . '/framework/admin_modules/exclude_single_post
 /*
 ** Walkers for Navigation menus
 */ 
-//Supports Menu Desc and Icons Both 
+//Supports Menu Desc and Icons Both
 class Hanne_Menu_With_Description extends Walker_Nav_Menu {
 	function start_el(&$output, $item, $depth = 0, $args = array(), $id = 0) {
 		global $wp_query;
