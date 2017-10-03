@@ -36,11 +36,11 @@ jQuery(window).load(function() {
 	        nextText: "<i class='fa fa-chevron-circle-right'></i>",
         });
 
-        jQuery('.sticky-sidebar').scrollToFixed({marginTop: function() {
-            var marginTop = jQuery(window).height() - jQuery('.sticky-sidebar').outerHeight(true) - 20;
-            if (marginTop >= 0) return 30;
-            return marginTop;
-        }});
+        //sticky sidebar
+        jQuery('.sticky-sidebar').scrollToFixed({
+            marginTop: 30,
+            limit: jQuery('#primary').offset().top + jQuery('#primary').height() - jQuery('.sticky-sidebar').height(),
+        });
 
     });
     
