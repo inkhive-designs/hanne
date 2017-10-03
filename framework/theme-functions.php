@@ -128,7 +128,7 @@ if (class_exists('WP_Customize_Control')) {
 
 function hanne_load_sidebar() {
 	$load_sidebar = true;
-	if ( get_theme_mod('hanne_disable_sidebar') ) :
+	if ( get_theme_mod('hanne_disable_sidebar', true) ) :
 		$load_sidebar = false;
 	elseif( get_theme_mod('hanne_disable_sidebar_home',true) && is_home() )	:
 		$load_sidebar = false;

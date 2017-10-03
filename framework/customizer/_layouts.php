@@ -8,6 +8,7 @@ $wp_customize->add_panel( 'hanne_design_panel', array(
     'title'          => __('Design & Layout','hanne'),
 ) );
 
+//Blog Layout
 $wp_customize->add_section(
     'hanne_design_options',
     array(
@@ -16,7 +17,6 @@ $wp_customize->add_section(
         'panel'     => 'hanne_design_panel'
     )
 );
-
 
 $wp_customize->add_setting(
     'hanne_blog_layout',
@@ -46,6 +46,7 @@ $wp_customize->add_control(
     )
 );
 
+//Sidebar Layout
 $wp_customize->add_section(
     'hanne_sidebar_options',
     array(
@@ -56,8 +57,29 @@ $wp_customize->add_section(
 );
 
 $wp_customize->add_setting(
+    'hanne_sidebar_style',
+    array(
+        'default' => 'default',
+    )
+);
+
+$wp_customize->add_control(
+    'hanne_sidebar_style',
+    array(
+        'setting' => 'hanne_sidebar_style',
+        'section' => 'hanne_sidebar_options',
+        'label' => __('Sidebar Style', 'hanne'),
+        'type' => 'select',
+        'choices' => array(
+            'default' => __('Default', 'hanne'),
+            'sticky-sidebar' => __('Sticky', 'hanne'),
+        )
+    )
+);
+
+$wp_customize->add_setting(
     'hanne_disable_sidebar',
-    array( 'sanitize_callback' => 'hanne_sanitize_checkbox' )
+    array( 'sanitize_callback' => 'hanne_sanitize_checkbox', 'default'  => true )
 );
 
 $wp_customize->add_control(
@@ -66,13 +88,12 @@ $wp_customize->add_control(
         'label'    => __( 'Disable Sidebar Everywhere.','hanne' ),
         'section'  => 'hanne_sidebar_options',
         'type'     => 'checkbox',
-        'default'  => false
     )
 );
 
 $wp_customize->add_setting(
     'hanne_disable_sidebar_home',
-    array( 'sanitize_callback' => 'hanne_sanitize_checkbox' )
+    array( 'sanitize_callback' => 'hanne_sanitize_checkbox', 'default'  => true )
 );
 
 $wp_customize->add_control(
@@ -82,13 +103,12 @@ $wp_customize->add_control(
         'section'  => 'hanne_sidebar_options',
         'type'     => 'checkbox',
         'active_callback' => 'hanne_show_sidebar_options',
-        'default'  => true
     )
 );
 
 $wp_customize->add_setting(
     'hanne_disable_sidebar_front',
-    array( 'sanitize_callback' => 'hanne_sanitize_checkbox' )
+    array( 'sanitize_callback' => 'hanne_sanitize_checkbox', 'default'  => true )
 );
 
 $wp_customize->add_control(
@@ -98,7 +118,6 @@ $wp_customize->add_control(
         'section'  => 'hanne_sidebar_options',
         'type'     => 'checkbox',
         'active_callback' => 'hanne_show_sidebar_options',
-        'default'  => false
     )
 );
 
@@ -140,6 +159,7 @@ function hanne_sanitize_text( $input ) {
     return wp_kses_post( force_balance_tags( $input ) );
 }
 
+//Custom Footer Text
 $wp_customize-> add_section(
     'hanne_custom_footer',
     array(

@@ -28,8 +28,6 @@ jQuery(document).ready( function() {
 	$grid.imagesLoaded().progress( function() {
 	  $grid.masonry('layout');
 	});
-	
-	
 });
 
 jQuery(window).load(function() {
@@ -37,7 +35,14 @@ jQuery(window).load(function() {
 	        prevText: "<i class='fa fa-chevron-circle-left'></i>",
 	        nextText: "<i class='fa fa-chevron-circle-right'></i>",
         });
-    });	
+
+        jQuery('.sticky-sidebar').scrollToFixed({marginTop: function() {
+            var marginTop = jQuery(window).height() - jQuery('.sticky-sidebar').outerHeight(true) - 20;
+            if (marginTop >= 0) return 30;
+            return marginTop;
+        }});
+
+    });
     
 (function($) {
 	$(document).ready(function() { 
