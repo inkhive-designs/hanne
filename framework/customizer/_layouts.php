@@ -57,7 +57,7 @@ $wp_customize->add_section(
 
 $wp_customize->add_setting(
     'hanne_disable_sidebar',
-    array( 'sanitize_callback' => 'hanne_sanitize_checkbox' )
+    array( 'sanitize_callback' => 'hanne_sanitize_checkbox', 'default'  => true )
 );
 
 $wp_customize->add_control(
@@ -66,13 +66,12 @@ $wp_customize->add_control(
         'label'    => __( 'Disable Sidebar Everywhere.','hanne' ),
         'section'  => 'hanne_sidebar_options',
         'type'     => 'checkbox',
-        'default'  => false
     )
 );
 
 $wp_customize->add_setting(
     'hanne_disable_sidebar_home',
-    array( 'sanitize_callback' => 'hanne_sanitize_checkbox' )
+    array( 'sanitize_callback' => 'hanne_sanitize_checkbox', 'default'  => true )
 );
 
 $wp_customize->add_control(
@@ -82,13 +81,12 @@ $wp_customize->add_control(
         'section'  => 'hanne_sidebar_options',
         'type'     => 'checkbox',
         'active_callback' => 'hanne_show_sidebar_options',
-        'default'  => true
     )
 );
 
 $wp_customize->add_setting(
     'hanne_disable_sidebar_front',
-    array( 'sanitize_callback' => 'hanne_sanitize_checkbox' )
+    array( 'sanitize_callback' => 'hanne_sanitize_checkbox', 'default'  => true )
 );
 
 $wp_customize->add_control(
@@ -98,7 +96,6 @@ $wp_customize->add_control(
         'section'  => 'hanne_sidebar_options',
         'type'     => 'checkbox',
         'active_callback' => 'hanne_show_sidebar_options',
-        'default'  => false
     )
 );
 
