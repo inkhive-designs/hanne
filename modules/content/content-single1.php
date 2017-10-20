@@ -3,22 +3,24 @@
  * @package hanne
  */
 ?>
+<?php $post_style1 = get_theme_mod('hanne_post_layout_style', 'default'); ?>
 
-<article id="post-<?php the_ID(); ?>" <?php post_class() ; ?>>
+<article id="post-<?php the_ID(); ?>" <?php echo post_class($post_style1) ; ?>>
+
+
+	<div id="featured-image">
+			<?php the_post_thumbnail('full'); ?>
+	</div>
 
     <header class="entry-header">
         <?php the_title( '<h1 class="entry-title title-font">', '</h1>' ); ?>
 
 
         <div class="entry-meta">
-            <?php hanne_posted_on(); ?>
+            <?php the_time('jS F Y'); ?> | <?php the_author(); ?>
         </div><!-- .entry-meta -->
     </header><!-- .entry-header -->
-
-    <div id="featured-image">
-        <?php the_post_thumbnail('full'); ?>
-    </div>
-
+			
 	<div class="entry-content">
 		<?php the_content(); ?>
 		<?php

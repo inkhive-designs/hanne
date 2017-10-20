@@ -11,8 +11,12 @@ get_header(); ?>
 		<main id="main" class="site-main" role="main">
 
 		<?php while ( have_posts() ) : the_post(); ?>
-
-			<?php get_template_part( 'modules/content/content', 'single' ); ?>
+            <?php $post_style = get_theme_mod('hanne_post_layout_style');
+            if( $post_style == 'style1' ) :
+                get_template_part( 'modules/content/content', 'single1' );
+             else:
+			    get_template_part( 'modules/content/content', 'single' );
+            endif; ?>
 
 			<?php //hanne_post_nav(); ?>
 
