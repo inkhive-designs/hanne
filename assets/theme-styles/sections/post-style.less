@@ -1,0 +1,24 @@
+article.style1 {
+  .entry-header {
+    text-align: center;
+    padding-top: 10px;
+    background: #f9f9f9;
+    h1 {
+      text-align: center;
+      color: @accent !important;
+      font-size: 45px;
+    }
+    .entry-meta {
+      text-align: center;
+    }
+  }
+  #featured-image {
+    margin-top: 10px;
+  }
+  .entry-content {
+    p:nth-child(1)::first-letter {
+      font-size: 200%;
+      color: @accent;
+    }
+  }
+}

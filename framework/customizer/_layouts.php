@@ -186,5 +186,37 @@ $wp_customize->add_control(
         'type' => 'text'
     )
 );
+
+//Post Layout
+    $wp_customize->add_section(
+        'hanne_post_layout',
+        array(
+            'title'     => __('Post Layout','hanne'),
+            'priority'  => 0,
+            'panel'     => 'hanne_design_panel'
+        )
+    );
+
+    $wp_customize->add_setting(
+        'hanne_post_layout_style',
+        array(
+            'default'		=> 'default',
+        )
+    );
+
+    $wp_customize->add_control(
+        'hanne_post_layout_style',
+        array(
+            'section' => 'hanne_post_layout',
+            'settings' => 'hanne_post_layout_style',
+            'label' => __('Select an style', 'hanne'),
+            'type' => 'select',
+            'choices' => array(
+                'default' => __('Default', 'hanne'),
+                'style1' => __('Style 1', 'hanne'),
+            )
+        )
+    );
+
 }
 add_action( 'customize_register', 'hanne_customize_register_layouts' );
