@@ -5,7 +5,7 @@
   -webkit-perspective: 500;
   perspective: 500;
   min-height: 144px;
-  padding: 20px 50px;
+  padding: 20px 50px !important;
   .featured-thumb {
     border: solid 1px darken(@background,12%);
     padding: 8px;
@@ -62,6 +62,11 @@
         .transform(scale(1.2));
       }
     }
+  }
+  @media screen and (max-width: 768px) {
+    overflow: hidden;
+    position: relative;
+
   }
 
 }

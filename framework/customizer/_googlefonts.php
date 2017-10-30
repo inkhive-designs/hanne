@@ -89,5 +89,41 @@ $wp_customize->add_control(
             'choices' => $font_size
         )
     );
+
+    //Page and Post content Font size start
+    $wp_customize->add_setting(
+        'hanne_content_page_post_fontsize_set',
+        array(
+            'default' => 'default',
+            'sanitize_callback' => 'hanne_sanitize_content_size'
+        )
+    );
+    function hanne_sanitize_content_size( $input ) {
+        if ( in_array($input, array('default','small','medium','large','extra-large') ) )
+            return $input;
+        else
+            return '';
+    }
+
+    $wp_customize->add_control(
+        'hanne_content_page_post_fontsize_set', array(
+            'settings' => 'hanne_content_page_post_fontsize_set',
+            'label'    => __( 'Page/Post Font Size','hanne' ),
+            'description' => __('Choose your font size. This is only for Posts and Pages. It wont affect your blog page.','hanne'),
+            'section'  => 'hanne_typo_options',
+            'type'     => 'select',
+            'choices' => array(
+                'default'   => 'Default',
+                'small' => 'Small',
+                'medium'   => 'Medium',
+                'large'  => 'Large',
+                'extra-large' => 'Extra Large',
+            ),
+        )
+    );
+
+    //Page and Post content Font size end
+
+
 }
 add_action( 'customize_register', 'hanne_customize_register_fonts' );

@@ -11,9 +11,13 @@
     .item-container {
       overflow: visible;
       .transition(0.8s all ease);
+      @media screen and (max-width: 767px){
+        transform: none;
+      }
     }
 
     img {
+      width: 100%;
       .transition(1s all ease);
       .transform(scale(1.02));
       position: relative;
@@ -42,12 +46,18 @@
       text-align: center;
       z-index: 10;
       opacity: 0;
+      @media screen and (max-width: 767px){
+        opacity: 1;
+        transform: none;
+      }
       padding: 10px 30px;
       .transition(0.4s all ease);
       .transform(translateY(100%) scale(1.03));
       @media screen and (max-width: 767px) { padding-bottom: 15px;}
     }
+    @media screen and (min-width: 767px){
     &:hover {
+
       .item-container {
         .transform(translateY(-1px));
       }
@@ -60,8 +70,13 @@
         filter: brightness(0.9);
         -webkit-filter: brightness(0.9);
         .transform(scale(1.05));
+        @media screen and (max-width: 767px){
+          transform: none;
+          -webkit-filter: none;
+        }
 
       }
+    }
     }
   }
 }

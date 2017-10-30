@@ -127,6 +127,27 @@ function hanne_custom_css_mods() {
 		$custom_css .= "#masthead #site-logo img { transform: scale(".$val."); -webkit-transform: scale(".$val."); -moz-transform: scale(".$val."); -ms-transform: scale(".$val."); }";
 		endif;
 
+
+
+    // page & post fontsize
+    if(get_theme_mod('hanne_content_page_post_fontsize_set')):
+        $val = get_theme_mod('hanne_content_page_post_fontsize_set');
+        if($val=='small'):
+            $custom_css .= "#primary-mono .entry-content{ font-size:12px;}";
+        elseif ($val=='medium'):
+            $custom_css .= "#primary-mono .entry-content{ font-size:16px;}";
+        elseif ($val=='large'):
+            $custom_css .= "#primary-mono .entry-content{ font-size:18px;}";
+        elseif ($val=='extra-large'):
+            $custom_css .= "#primary-mono .entry-content{ font-size:20px;}";
+        endif;
+    else:
+        $custom_css .= "#primary-mono .entry-content{ font-size:14px;}";
+    endif;
+		
+		
+		
+
 	wp_add_inline_style( 'hanne-main-theme-style', wp_strip_all_tags($custom_css) );
 
 
