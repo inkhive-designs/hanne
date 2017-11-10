@@ -60,6 +60,8 @@ $wp_customize->add_setting(
     'hanne_sidebar_style',
     array(
         'default' => 'default',
+        'sanitize_callback' => 'hanne_sanitize_sidebar_style',
+
     )
 );
 
@@ -76,6 +78,13 @@ $wp_customize->add_control(
         )
     )
 );
+
+    function hanne_sanitize_sidebar_style( $input ) {
+        if ( in_array($input, array('default','sticky-sidebar') ) )
+            return $input;
+        else
+            return '';
+    }
 
 $wp_customize->add_setting(
     'hanne_disable_sidebar',
@@ -201,6 +210,7 @@ $wp_customize->add_control(
         'hanne_post_layout_style',
         array(
             'default'		=> 'default',
+            'sanitize_callback' => 'hanne_sanitize_checkbox'
         )
     );
 

@@ -2,11 +2,13 @@ ChangeLog
 =========
 Version 1.0.5
 
-    i) Site Description font size bug fixed.
-    ii) Social icons on mobile screen bug fixed.
-    iii) Featured area on mobile screen bug fixed.
-    iv) 3 column blog layout and Hanne blog layout on mobile screen bug fixed.
-    v) Added Typography option for post/page.
+    i) Sidebar Style Feature.
+    ii) Post Content Layout Feature.
+    iii) Added Typography option for post/page.
+    iv) Featured area on mobile screen bug fixed.
+    v) 3 column blog layout and Hanne blog layout on mobile screen bug fixed.
+    vi) Social icons on mobile screen bug fixed..
+    vii) Site Description font size bug fixed.
 
 Version 1.0.2
 
@@ -22,7 +24,7 @@ Version 1.0.0
 
 	i) Corrected Text Domain
 
-Version 0.99
+Version 0.9.9
 
 	i) Removed Languages Function
 	ii) Removed Unused Header Functions
