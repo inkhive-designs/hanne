@@ -121,15 +121,7 @@ function hanne_custom_css_mods() {
 	if ( hanne_load_sidebar() ) :
 		$custom_css .= ".hanne { padding: 20px 20px; }";
 	endif;
-	
-	if ( get_theme_mod('hanne_logo_resize') ) :
-		$val = esc_html(get_theme_mod('hanne_logo_resize'))/100;
-		$custom_css .= "#masthead #site-logo img { transform: scale(".$val."); -webkit-transform: scale(".$val."); -moz-transform: scale(".$val."); -ms-transform: scale(".$val."); }";
-		endif;
-
-
-
-    // page & post fontsize
+	    // page & post fontsize
     if(get_theme_mod('hanne_content_page_post_fontsize_set')):
         $val = get_theme_mod('hanne_content_page_post_fontsize_set');
         if($val=='small'):
