@@ -2,8 +2,10 @@
     <div class="container">
         <div class="site-branding">
             <?php if ( has_custom_logo() ) : ?>
+                <div class="hanne-logo">
                 <div id="site-logo">
                     <?php the_custom_logo(); ?>
+                </div>
                 </div>
             <?php endif; ?>
             <div id="text-title-desc">

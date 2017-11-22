@@ -1,5 +1,9 @@
 ChangeLog
 =========
+Version 1.0.6
+
+    i) Site logo bug fixed.
+
 Version 1.0.5
 
     i) Sidebar Style Feature.
